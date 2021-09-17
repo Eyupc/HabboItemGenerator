@@ -35,7 +35,8 @@ namespace HabboItemGenerator
             export.Furnidata();
 
             databaseConnection.getConnection().Close();
-            
+
+            Console.WriteLine("Successfully generated");
             Console.ReadLine();
 
 
