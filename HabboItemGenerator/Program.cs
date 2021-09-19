@@ -79,7 +79,8 @@ namespace HabboItemGenerator
 
             databaseConnection.getConnection().Close();
 
-            Console.WriteLine("The files have been successfully generated.");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("\r\nThe files have been successfully generated.");
             Console.ReadLine();
 
 
