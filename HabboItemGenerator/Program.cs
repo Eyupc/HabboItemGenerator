@@ -14,8 +14,30 @@ namespace HabboItemGenerator
             SQLGenerator sQLGenerator = null;
             FurnidataGenerator furnidataGenerator = null;
             Configuration configuration = new();
-           
-            Console.WriteLine("STARTED!");
+
+            Console.BackgroundColor = ConsoleColor.DarkRed;
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("██╗░░██╗░█████╗░██████╗░██████╗░░█████╗░  ██╗████████╗███████╗███╗░░░███╗");
+            Console.WriteLine("██║░░██║██╔══██╗██╔══██╗██╔══██╗██╔══██╗  ██║╚══██╔══╝██╔════╝████╗░████║");
+            Console.WriteLine("███████║███████║██████╦╝██████╦╝██║░░██║  ██║░░░██║░░░█████╗░░██╔████╔██║");
+            Console.WriteLine("██╔══██║██╔══██║██╔══██╗██╔══██╗██║░░██║  ██║░░░██║░░░██╔══╝░░██║╚██╔╝██║");
+            Console.WriteLine("██║░░██║██║░░██║██████╦╝██████╦╝╚█████╔╝  ██║░░░██║░░░███████╗██║░╚═╝░██║");
+            Console.WriteLine("╚═╝░░╚═╝╚═╝░░╚═╝╚═════╝░╚═════╝░░╚════╝░  ╚═╝░░░╚═╝░░░╚══════╝╚═╝░░░░░╚═╝");
+
+            Console.WriteLine("░██████╗░███████╗███╗░░██╗███████╗██████╗░░█████╗░████████╗░█████╗░██████╗░");
+            Console.WriteLine("██╔════╝░██╔════╝████╗░██║██╔════╝██╔══██╗██╔══██╗╚══██╔══╝██╔══██╗██╔══██╗");
+            Console.WriteLine("██║░░██╗░█████╗░░██╔██╗██║█████╗░░██████╔╝███████║░░░██║░░░██║░░██║██████╔╝");
+            Console.WriteLine("██║░░╚██╗██╔══╝░░██║╚████║██╔══╝░░██╔══██╗██╔══██║░░░██║░░░██║░░██║██╔══██╗");
+            Console.WriteLine("╚██████╔╝███████╗██║░╚███║███████╗██║░░██║██║░░██║░░░██║░░░╚█████╔╝██║░░██║");
+            Console.WriteLine("░╚═════╝░╚══════╝╚═╝░░╚══╝╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░░╚════╝░╚═╝░░╚═╝");
+            Console.WriteLine("\r\n");
+
+            Console.ResetColor();
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("The program has started!\r\n");
+
+            Console.ResetColor();
+
 
             string[] filePaths = null;
             try
@@ -23,6 +45,7 @@ namespace HabboItemGenerator
                filePaths = Directory.GetFiles(configuration.getFurniPath(), "*.swf");
             }catch(DirectoryNotFoundException e)
             {
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine(configuration.getFurniPath() + "    THIS PATH doesn't exist!");
                 Console.ReadLine();
                 return;
@@ -36,6 +59,7 @@ namespace HabboItemGenerator
                 databaseConnection.getConnection().Open();
             }
             catch(MySqlException e) {
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Failed to connect to database.");
                 Console.ReadLine();
                 return;
@@ -55,7 +79,7 @@ namespace HabboItemGenerator
 
             databaseConnection.getConnection().Close();
 
-            Console.WriteLine("Successfully generated");
+            Console.WriteLine("The files have been successfully generated.");
             Console.ReadLine();
 
 

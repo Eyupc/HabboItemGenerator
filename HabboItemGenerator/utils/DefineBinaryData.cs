@@ -86,7 +86,7 @@ namespace HabboItemGenerator.utils
 
                             //  Console.WriteLine(_xml);
 
-                            Console.WriteLine((this.X + " " + this.Y + " " + this.Z));
+                            Console.WriteLine((this.filename + "    X: " + this.X + " " + "Y: " + this.Y + " " +"Z: "+  this.Z));
                         }else if(xmlReader.GetReader().GetElementsByTagName("animations").Count > 0)
                         {
                             XmlNodeList animation = xmlReader.GetReader().GetElementsByTagName("animation");
