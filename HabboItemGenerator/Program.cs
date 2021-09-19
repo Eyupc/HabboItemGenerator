@@ -59,8 +59,6 @@ namespace HabboItemGenerator
             Console.ReadLine();
 
 
-            //Need to work on forloop -> will crash
-
 
 
         }
