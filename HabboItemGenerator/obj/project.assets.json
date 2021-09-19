@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "AWSSDK.Core/3.7.3.8": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {}
+        }
+      },
       "BouncyCastle.NetCore/1.8.5": {
         "type": "package",
         "compile": {
@@ -119,6 +128,15 @@
         },
         "runtime": {
           "lib/net5.0/MySqlConnector.dll": {}
+        }
+      },
+      "PeanutButter.INI/2.0.36": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/PeanutButter.INI.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/PeanutButter.INI.dll": {}
         }
       },
       "SharpCompress/0.26.0": {
@@ -312,6 +330,31 @@
     }
   },
   "libraries": {
+    "AWSSDK.Core/3.7.3.8": {
+      "sha512": "X9HoIetVbSKaYm5LQGo9q/BChvevHPkYdWvHJ4J9LE7ulIGQ8vx305KkQscmQLoj0RNy9/3K4mKiUEeeSa0fuw==",
+      "type": "package",
+      "path": "awssdk.core/3.7.3.8",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "awssdk.core.3.7.3.8.nupkg.sha512",
+        "awssdk.core.nuspec",
+        "lib/net35/AWSSDK.Core.dll",
+        "lib/net35/AWSSDK.Core.pdb",
+        "lib/net35/AWSSDK.Core.xml",
+        "lib/net45/AWSSDK.Core.dll",
+        "lib/net45/AWSSDK.Core.pdb",
+        "lib/net45/AWSSDK.Core.xml",
+        "lib/netcoreapp3.1/AWSSDK.Core.dll",
+        "lib/netcoreapp3.1/AWSSDK.Core.pdb",
+        "lib/netcoreapp3.1/AWSSDK.Core.xml",
+        "lib/netstandard2.0/AWSSDK.Core.dll",
+        "lib/netstandard2.0/AWSSDK.Core.pdb",
+        "lib/netstandard2.0/AWSSDK.Core.xml",
+        "tools/account-management.ps1"
+      ]
+    },
     "BouncyCastle.NetCore/1.8.5": {
       "sha512": "6uxsQw2UXrt82VQAWC2td3oBSJjUZ3P4u4DliagB8wf67KsU53V8sW9xwdF+IwZOOZFR0TCZuv/YKZ2BlrfAag==",
       "type": "package",
@@ -521,6 +564,25 @@
         "logo.png",
         "mysqlconnector.1.3.12.nupkg.sha512",
         "mysqlconnector.nuspec"
+      ]
+    },
+    "PeanutButter.INI/2.0.36": {
+      "sha512": "i6m4q3ioPDO8IHKCCXZukq8HeLG+oUPX64Buqaum8UP5NLVPW9QstsgtyM2PNrON0kWAhQg2Nv9pqxU6zmE0Tw==",
+      "type": "package",
+      "path": "peanutbutter.ini/2.0.36",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net452/PeanutButter.INI.dll",
+        "lib/net452/PeanutButter.INI.xml",
+        "lib/net462/PeanutButter.INI.dll",
+        "lib/net462/PeanutButter.INI.xml",
+        "lib/netstandard2.0/PeanutButter.INI.deps.json",
+        "lib/netstandard2.0/PeanutButter.INI.dll",
+        "lib/netstandard2.0/PeanutButter.INI.xml",
+        "peanutbutter.ini.2.0.36.nupkg.sha512",
+        "peanutbutter.ini.nuspec"
       ]
     },
     "SharpCompress/0.26.0": {
@@ -921,8 +983,10 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "AWSSDK.Core >= 3.7.3.8",
       "MySql.Data >= 8.0.26",
       "MySqlConnector >= 1.3.12",
+      "PeanutButter.INI >= 2.0.36",
       "SwfLib >= 1.0.5"
     ]
   },
@@ -970,6 +1034,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "AWSSDK.Core": {
+            "target": "Package",
+            "version": "[3.7.3.8, )"
+          },
           "MySql.Data": {
             "target": "Package",
             "version": "[8.0.26, )"
@@ -977,6 +1045,10 @@
           "MySqlConnector": {
             "target": "Package",
             "version": "[1.3.12, )"
+          },
+          "PeanutButter.INI": {
+            "target": "Package",
+            "version": "[2.0.36, )"
           },
           "SwfLib": {
             "target": "Package",

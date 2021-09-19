@@ -8,12 +8,22 @@
     ".NETCoreApp,Version=v5.0": {
       "HabboItemGenerator/1.0.0": {
         "dependencies": {
+          "AWSSDK.Core": "3.7.3.8",
           "MySql.Data": "8.0.26",
           "MySqlConnector": "1.3.12",
+          "PeanutButter.INI": "2.0.36",
           "SwfLib": "1.0.5"
         },
         "runtime": {
           "HabboItemGenerator.dll": {}
+        }
+      },
+      "AWSSDK.Core/3.7.3.8": {
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.3.8"
+          }
         }
       },
       "BouncyCastle.NetCore/1.8.5": {
@@ -122,6 +132,14 @@
           "lib/net5.0/MySqlConnector.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.3.12.0"
+          }
+        }
+      },
+      "PeanutButter.INI/2.0.36": {
+        "runtime": {
+          "lib/netstandard2.0/PeanutButter.INI.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -254,6 +272,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "AWSSDK.Core/3.7.3.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-X9HoIetVbSKaYm5LQGo9q/BChvevHPkYdWvHJ4J9LE7ulIGQ8vx305KkQscmQLoj0RNy9/3K4mKiUEeeSa0fuw==",
+      "path": "awssdk.core/3.7.3.8",
+      "hashPath": "awssdk.core.3.7.3.8.nupkg.sha512"
+    },
     "BouncyCastle.NetCore/1.8.5": {
       "type": "package",
       "serviceable": true,
@@ -316,6 +341,13 @@
       "sha512": "sha512-8f8jI2YoOEC7IuMdsgIp5gdFKYxEnKMOzZiUsFIMp7Uv+iqERAtfo+QVpiBGRcqIVPQidL2XYBIMpuoCeEAzkw==",
       "path": "mysqlconnector/1.3.12",
       "hashPath": "mysqlconnector.1.3.12.nupkg.sha512"
+    },
+    "PeanutButter.INI/2.0.36": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-i6m4q3ioPDO8IHKCCXZukq8HeLG+oUPX64Buqaum8UP5NLVPW9QstsgtyM2PNrON0kWAhQg2Nv9pqxU6zmE0Tw==",
+      "path": "peanutbutter.ini/2.0.36",
+      "hashPath": "peanutbutter.ini.2.0.36.nupkg.sha512"
     },
     "SharpCompress/0.26.0": {
       "type": "package",

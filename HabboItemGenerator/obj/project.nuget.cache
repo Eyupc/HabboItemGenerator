@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "fJMJVjFfPtwMGTR0Yy9TyzjXoDFfw0vLKBV9HHj7o6h50OH8v5dvYSXGZFokgZA1mKXQLMGr/s6VxDO9dRj4hw==",
+  "dgSpecHash": "uz4L5QGxp48gEelwwn2GkVQOWI+j2aWs49BHAxPwM6TP8GDgdNzzCaBEGH70S6toq3HcnaXVZBKqGf2fsGm6hw==",
   "success": true,
   "projectFilePath": "C:\\Users\\eyupt\\source\\repos\\HabboItemGenerator\\HabboItemGenerator\\HabboItemGenerator.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\eyupt\\.nuget\\packages\\awssdk.core\\3.7.3.8\\awssdk.core.3.7.3.8.nupkg.sha512",
     "C:\\Users\\eyupt\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\eyupt\\.nuget\\packages\\google.protobuf\\3.14.0\\google.protobuf.3.14.0.nupkg.sha512",
     "C:\\Users\\eyupt\\.nuget\\packages\\k4os.compression.lz4\\1.1.11\\k4os.compression.lz4.1.1.11.nupkg.sha512",
@@ -13,6 +14,7 @@
     "C:\\Users\\eyupt\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\eyupt\\.nuget\\packages\\mysql.data\\8.0.26\\mysql.data.8.0.26.nupkg.sha512",
     "C:\\Users\\eyupt\\.nuget\\packages\\mysqlconnector\\1.3.12\\mysqlconnector.1.3.12.nupkg.sha512",
+    "C:\\Users\\eyupt\\.nuget\\packages\\peanutbutter.ini\\2.0.36\\peanutbutter.ini.2.0.36.nupkg.sha512",
     "C:\\Users\\eyupt\\.nuget\\packages\\sharpcompress\\0.26.0\\sharpcompress.0.26.0.nupkg.sha512",
     "C:\\Users\\eyupt\\.nuget\\packages\\swflib\\1.0.5\\swflib.1.0.5.nupkg.sha512",
     "C:\\Users\\eyupt\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",

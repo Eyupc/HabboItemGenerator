@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using HabboItemGenerator.utils;
+using MySql.Data.MySqlClient;
 
 namespace HabboItemGenerator
 {
@@ -10,17 +11,35 @@ namespace HabboItemGenerator
         static void Main(string[] args)
         {
 
-         SQLGenerator sQLGenerator = null;
-         FurnidataGenerator furnidataGenerator = null;
+            SQLGenerator sQLGenerator = null;
+            FurnidataGenerator furnidataGenerator = null;
+            Configuration configuration = new();
+           
+            Console.WriteLine("STARTED!");
 
-        Console.WriteLine("STARTED!");
+            string[] filePaths = null;
+            try
+            {
+               filePaths = Directory.GetFiles(configuration.getFurniPath(), "*.swf");
+            }catch(DirectoryNotFoundException e)
+            {
+                Console.WriteLine(configuration.getFurniPath() + "    THIS PATH doesn't exist!");
+                Console.ReadLine();
+                return;
+            }
+           
+            Database databaseConnection = new Database(configuration.getDBConfig()["db.host"], int.Parse(configuration.getDBConfig()["db.port"]), configuration.getDBConfig()["db.user"], configuration.getDBConfig()["db.database"], configuration.getDBConfig()["db.password"]);
 
-            string[] filePaths = Directory.GetFiles(@"C:\xampp2\htdocs\ms-swf\dcr\hof_furni\test", "*.swf");
-
-
-            Database databaseConnection = new Database("127.0.0.1", 3306, "root", "hotel", "");
-            databaseConnection.connect();
-            databaseConnection.getConnection().Open();
+            try
+            {
+                databaseConnection.connect();
+                databaseConnection.getConnection().Open();
+            }
+            catch(MySqlException e) {
+                Console.WriteLine("Failed to connect to database.");
+                Console.ReadLine();
+                return;
+            };
 
             for (int i = 0; i <= filePaths.Length - 1; i++) {
                     Stream stream = File.Open(filePaths[i], FileMode.Open, FileAccess.Read);
