@@ -1,5 +1,7 @@
 using System;
+using System.Globalization;
 using System.IO;
+using System.Threading;
 using HabboItemGenerator.utils;
 using MySql.Data.MySqlClient;
 
@@ -30,7 +32,7 @@ namespace HabboItemGenerator
             Console.WriteLine("██║░░╚██╗██╔══╝░░██║╚████║██╔══╝░░██╔══██╗██╔══██║░░░██║░░░██║░░██║██╔══██╗");
             Console.WriteLine("╚██████╔╝███████╗██║░╚███║███████╗██║░░██║██║░░██║░░░██║░░░╚█████╔╝██║░░██║");
             Console.WriteLine("░╚═════╝░╚══════╝╚═╝░░╚══╝╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░░╚════╝░╚═╝░░╚═╝");
-            Console.WriteLine("\r\n");
+            Console.WriteLine("V1.1\r\n");
 
             Console.ResetColor();
             Console.ForegroundColor = ConsoleColor.Cyan;

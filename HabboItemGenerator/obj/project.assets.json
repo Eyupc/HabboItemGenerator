@@ -992,24 +992,27 @@
   },
   "packageFolders": {
     "C:\\Users\\eyupt\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\eyupt\\source\\repos\\HabboItemGenerator\\HabboItemGenerator\\HabboItemGenerator.csproj",
+      "projectUniqueName": "C:\\Users\\eyupt\\OneDrive\\Bureaublad\\Projecten\\HabboItemGenerator\\HabboItemGenerator\\HabboItemGenerator.csproj",
       "projectName": "HabboItemGenerator",
-      "projectPath": "C:\\Users\\eyupt\\source\\repos\\HabboItemGenerator\\HabboItemGenerator\\HabboItemGenerator.csproj",
+      "projectPath": "C:\\Users\\eyupt\\OneDrive\\Bureaublad\\Projecten\\HabboItemGenerator\\HabboItemGenerator\\HabboItemGenerator.csproj",
       "packagesPath": "C:\\Users\\eyupt\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\eyupt\\source\\repos\\HabboItemGenerator\\HabboItemGenerator\\obj\\",
+      "outputPath": "C:\\Users\\eyupt\\OneDrive\\Bureaublad\\Projecten\\HabboItemGenerator\\HabboItemGenerator\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
         "C:\\Users\\eyupt\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -1070,7 +1073,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

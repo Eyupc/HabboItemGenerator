@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using MySql.Data.MySqlClient; 
 using System.Threading.Tasks;
+using System.Globalization;
+using System.Threading;
 
 namespace HabboItemGenerator.utils
 {
@@ -22,6 +24,7 @@ namespace HabboItemGenerator.utils
 
         public SQLGenerator(Database connection, Dictionary<string, string> itemDetails)
         {
+
             this.command = connection.getCommand();
             this.reader = connection.getDataReader();
 
@@ -42,7 +45,7 @@ namespace HabboItemGenerator.utils
         private void inserItemsBase()
         {
             String sql = "INSERT INTO `items_base` (`id`, `sprite_id`, `item_name`, `public_name`, `width`, `length`, `stack_height`, `allow_stack`, `allow_sit`, `allow_lay`, `allow_walk`, `allow_gift`, `allow_trade`, `allow_recycle`, `allow_marketplace_sell`, `allow_inventory_stack`, `type`, `interaction_type`, `interaction_modes_count`, `vending_ids`, `multiheight`, `customparams`, `effect_id_male`, `effect_id_female`, `clothing_on_walk`) " +
-                "VALUES(" + itemID + ", " + itemID + ", '" + itemDetails["name"] + "', '" + itemDetails["name"] + "',"+itemDetails["X"]+","+ itemDetails["Y"]+","+ itemDetails["Z"]+", '1', '0', '0', '0', '1', '1', '1', '1', '1', 's', 'default',"+ itemDetails["interaction_modes_count"] + ", '', '', '', 0, 0, ''); ";
+                "VALUES(" + itemID + ", " + itemID + ", '" + itemDetails["name"] + "', '" + itemDetails["name"] + "',"+itemDetails["X"]+","+ itemDetails["Y"]+","+itemDetails["Z"].Replace(",",".")+", '1', '0', '0', '0', '1', '1', '1', '1', '1', 's', 'default',"+ itemDetails["interaction_modes_count"] + ", '', '', '', 0, 0, ''); ";
 
             items_base.AppendLine(sql);
         }

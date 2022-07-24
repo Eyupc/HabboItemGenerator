@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uz4L5QGxp48gEelwwn2GkVQOWI+j2aWs49BHAxPwM6TP8GDgdNzzCaBEGH70S6toq3HcnaXVZBKqGf2fsGm6hw==",
+  "dgSpecHash": "+6ZCdJuUj3UVCNk5OVT4q/v/pIGREbos3D2UbfzonOjNjZiSqXXXEJ547La0Aj8UVJgwcW7XMLzFjdy5+0/9xw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\eyupt\\source\\repos\\HabboItemGenerator\\HabboItemGenerator\\HabboItemGenerator.csproj",
+  "projectFilePath": "C:\\Users\\eyupt\\OneDrive\\Bureaublad\\Projecten\\HabboItemGenerator\\HabboItemGenerator\\HabboItemGenerator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\eyupt\\.nuget\\packages\\awssdk.core\\3.7.3.8\\awssdk.core.3.7.3.8.nupkg.sha512",
     "C:\\Users\\eyupt\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
